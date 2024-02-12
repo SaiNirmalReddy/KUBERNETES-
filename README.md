@@ -136,7 +136,7 @@ API Server                      Kubelet
 etcd                             Proxy
 Scheduler                       Container Runtime
 Controller Manager
-Cloud Controller Manager|
+Cloud Controller Manager
 
 -> Let's learn about the Worker Node Componets in the architecture
 
