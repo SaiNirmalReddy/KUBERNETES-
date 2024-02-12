@@ -10,7 +10,7 @@ KUBERNETES
 
 -> Containers are ephemerial(short living) in nature it means containers can die and revive anytime .
 
-->  Problem 1 - Single Host Nature 
+    Problem 1 - Single Host Nature 
 
     Problem -2 - Auto Healing 
 
