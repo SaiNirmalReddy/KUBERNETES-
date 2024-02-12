@@ -129,14 +129,14 @@ Now, Kubernetes is basically originated by Google and Google is using one specif
    4) Mutliple Enterprise Level Support - Like Kubernets offers you advanced load balancing, security related things, advance networking .
 
 
- Control Plane                Data Plane
+ Control Plane  |              Data Plane
 
 
 API Server                      Kubelet
 etcd                             Proxy
 Scheduler                       Container Runtime
 Controller Manager
-Cloud Controller Manager
+Cloud Controller Manager|
 
 -> Let's learn about the Worker Node Componets in the architecture
 
