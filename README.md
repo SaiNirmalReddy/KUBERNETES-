@@ -32,9 +32,7 @@ KUBERNETES
 
 -> Let's say you or on a Host on top of which you installed Docker    and top which you have created 100 containers and one of this containers like C1 started taking lot of memory , so this C1 may impacts your C89 or C99 container because of not getting enough resources so it may die or not yet started - beacuse you have only Host i.e., Single Host Nature .
 
- C1,C2,C3,C4, -- C100
- ________________________
-   Docker
+ C1,C2,C3,C4, -- C100 / Docker 
 
 2)  Problem -2 - Auto Healing 
 
@@ -48,12 +46,7 @@ KUBERNETES
 3) 	  Problem 3 - Auto Scaling 
 
 ->
- |C1| - 4GB, 4CPU 
- _________________________
-   Docker
-____________________________
-  
-  EC2 Instance
+ |C1| - 4GB, 4CPU / Docker / EC2 Instance
 
 -> Let's say you or on a Host on top of which you installed Docker    and top which you have installed Containers and C1 can maximum consume upto 4GB RAM and 4 CPU's becuase it is the maximum capacity of the Host . But for some reason, users have been increased from 10,000 to 1,oo,ooo . So to satisfy this increasing load or for the conainer or the application to act upon the increasing load , you need to have a specific feature called Auto Scaling .
 
