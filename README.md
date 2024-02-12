@@ -115,6 +115,79 @@ Now, Kubernetes is basically originated by Google and Google is using one specif
 
 
 
+ KUBERNETES ARCHITECTURE
+
+
+-> Kubernetes offers four fundamental advantages over Docker 
+
+ 1) Cluster 
+
+ 2) Auto Healing 
+
+  3) Auto Scaling 
+
+   4) Mutliple Enterprise Level Support - Like Kubernets offers you advanced load balancing, security related things, advance networking .
+
+
+ Control Plane                Data Plane
+
+
+API Server                      Kubelet
+etcd                             Proxy
+Scheduler                       Container Runtime
+Controller Manager
+Cloud Controller Manager
+
+-> Let's learn about the Worker Node Componets in the architecture
+
+-> Let's start with creation of Container in Docker 
+
+-> Let's say there is a virtual machine , on top which you installed  DOCKER and you are running a container using a "docker run" command , Now Let's assume we are running a "JAVA APPLICATION" but we don't have a "Java Runtime Environment" then the JAVA apllication will not run . So, similarly in the same way docker will not tun if it doesn't have the "docker run time" component and we call this as "DockerShim" . 
+
+
+-> Now, If we move to Kubernetes we have a Master and Worker Architecture . Now just a Example like there is a One Master and One Worker but In general we have Multiple Masters and Multiple Workers in Real -time . 
+
+
+-> So, what happens in Kubernetes is the request is received and like when we deploy your "Pod" from Master Node through Control Plane in Worker Node and we have a component is kubernetes is called as "kubelet" and it is responsible for running your Pod and it always checks for whether the Pod is running or not and and for this needs to be have something like "container-runtime" and this implements container interface(containerd,dockershim,cri-o-).and if the pod is not in running state , then "Kubelet"  will inform the "api server" in the control plane to do someting or restart the container .
+
+-> Next, the "Kube-Proxy" basically provides you Networking that means every Pod that you are creating and every container you are creating , it will alocate a IP address and it will be responsible even for the load balancing capabilities because we know that Kubernetes have something called as "Auto-Scaling" and when you scale your pod, instead of one replica if you have 2 replicas for your pod, then has to be a component which says send 50% to one and 50% to other that is done by kube-proxy . 
+
+-> Kube-Proxy uses IP Tables for the Networking configuration .
+
+
+
+-> Now, Let's learn about the Master Node Componets in the architecture .
+
+-> To manage and decide the instructions, there must be a heart or kernel to the Kubernets in Master node that is "API SERVER" . API Server is a ccomponent that basically exposes your Kubernetes . 
+
+-> Let's say the user is trying to create a Pod and access API Server and for example API SERVER decides "node1" is free but to schedule the component in "node1", we have component in Kubernetes is "Scheduler" . So Scheduler basically responsible for scheduling your pods or resources in kubernetes and it receives information from API Server .
+
+
+-> After this, we are deploying a production level application on kubernetes cluster and we have the component basically acts as a back-up service handles the entire storage of cluster information is "etcd" and etcd is a key value store  So, the entire kubernetes cluster information is stored as objects (or) key-value pairs in etcd .
+
+
+-> Controller Manager - Kubernetes have controllers like Replica sets that is basically a maintaing stage of kubernetes pod .
+
+-> To auto-scale the components from one to two,three and so on there has to be a component if we need two or many pods at the time, replica sets are responsible anf to ensure the contollers are always running, controller manager is responsible for these things . 
+
+
+-> Cloud Controller Manager (CCM) 
+
+
+-> Let's say that Kubernetes can run on "EKS,AKS" cloud platforms . 
+
+-> Let's say you are using Elastic Kubernetes Services and there is a user request to create a load balancer or storage , So User sends a request to create a storage or load balancer , the API should understand and create them and this mechanism has to be implemented on "Cloud Control Manager"  
+
+
+
+-> In a nutshell, Control Plane is controlling the actions and Data Plane is executing the actions . 
+
+
+
+
+
+
+
 
 
 
