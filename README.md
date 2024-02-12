@@ -32,8 +32,8 @@ KUBERNETES
 
 -> Let's say you or on a Host on top of which you installed Docker    and top which you have created 100 containers and one of this containers like C1 started taking lot of memory , so this C1 may impacts your C89 or C99 container because of not getting enough resources so it may die or not yet started - beacuse you have only Host i.e., Single Host Nature .
 
- C1,C2,C3,C4, -------- C100
-_____________________________
+ C1,C2,C3,C4, -- C100
+ ________________________
    Docker
 
 2)  Problem -2 - Auto Healing 
