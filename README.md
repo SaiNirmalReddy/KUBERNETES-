@@ -7,7 +7,7 @@ KUBERNETES
 
 ![Kubernetes Architecture](./Kubimages/Screenshot%202024-02-13%20005655.png)
 
-![Sample Screenshot](./Sample Ss/Screenshot 2024-02-13 200805.png)
+![Sample Screenshot](./Sample%20Ss/Screenshot%202024-02-13%20200805.png)
 
 
 -> Kubernets is a container orchestration platform . 
