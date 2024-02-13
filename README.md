@@ -5,7 +5,6 @@ This is a KUBERNETES discussion .
 
 KUBERNETES 
 
-https://github.com/sainirmalreddy/KUBERNETES/main/C:\Users\saini\OneDrive\Pictures\Screenshots\Screenshot2024-02-13005655.png
 
 
 -> Kubernets is a container orchestration platform . 
