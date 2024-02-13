@@ -118,6 +118,9 @@ Now, Kubernetes is basically originated by Google and Google is using one specif
  KUBERNETES ARCHITECTURE
 
 
+ "C:\Users\saini\OneDrive\Pictures\Screenshots\Screenshot 2024-02-13 005655.png"
+
+
 -> Kubernetes offers four fundamental advantages over Docker 
 
  1) Cluster 
