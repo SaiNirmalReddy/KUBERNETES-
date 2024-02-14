@@ -1,8 +1,6 @@
 # KUBERNETES-
 This is a KUBERNETES discussion . 
 
-
-
 KUBERNETES 
 
 -> Kubernets is a container orchestration platform . 
@@ -218,9 +216,9 @@ Kubernetes Production Systems
 
  -> Now, How Devops Engineers manages 100's of clusters on Production ? 
 
-    -> We have Kops,Kubeadm,Kubequash 
+   -> We have Kops,Kubeadm,Kubequash 
 
-          == We use a tool called "KOPS" to create,manage and delete the clusters in "KUBERNETES" .But Initially before 4 or 5 years we used to use "Kubeadm" in production but the difference with Kubeadm is you have to lot of manual activities like whenever you want to Upgrad, Configure - Kubeadm doesn't have that smooth approach of handling things whereas "KOPS" is basically Kubernetes Operations .
+ We use a tool called "KOPS" to create,manage and delete the clusters in "KUBERNETES" .But Initially before 4 or 5 years we used to use "Kubeadm" in production but the difference with Kubeadm is you have to lot of manual activities like whenever you want to Upgrad, Configure - Kubeadm doesn't have that smooth approach of handling things whereas "KOPS" is basically Kubernetes Operations .
 
 -> We have the Lifecycle of Kubernetes like Installing,Upgrading,Managing and Deleting Clusters and this lifecyle is managed by KOPS . 
 
