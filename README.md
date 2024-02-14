@@ -9,12 +9,6 @@ KUBERNETES
 
 -> Containers are ephemerial(short living) in nature it means containers can die and revive anytime .
 
-    Problem 1 - Single Host Nature 
-
-    Problem -2 - Auto Healing 
-
-    Problem 3 - Auto Scaling 
-
  -> Everybody knows that people started moving to "microservices"
 
 -> The Only pre-requesites to learn KUBERNETS is DOCKER . 
@@ -24,6 +18,12 @@ KUBERNETES
 -> So, Now What is Kubernets - > KUBERNETES is a Container Orchestration Platform .
 
  -> So before we start KUBERNETES, we will start with the problems of DOCKER .
+
+     Problem 1 - Single Host Nature 
+
+    Problem -2 - Auto Healing 
+
+    Problem 3 - Auto Scaling 
 
 -> Containers are ephemerial(short living) in nature it means containers can die and revive anytime .
 
