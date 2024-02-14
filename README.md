@@ -5,10 +5,6 @@ This is a KUBERNETES discussion .
 
 KUBERNETES 
 
-![Kubernetes Architecture](./Kubimages/Screenshot%202024-02-13%20005655.png)
-
-
-
 -> Kubernets is a container orchestration platform . 
 
 -> Containers are ephemerial(short living) in nature it means containers can die and revive anytime .
@@ -121,7 +117,7 @@ Now, Kubernetes is basically originated by Google and Google is using one specif
  KUBERNETES ARCHITECTURE
 
 
- "C:\Users\saini\OneDrive\Pictures\Screenshots\Screenshot 2024-02-13 005655.png"
+![Kubernetes Architecture](./Kubimages/Screenshot%202024-02-13%20005655.png)
 
 
 -> Kubernetes offers four fundamental advantages over Docker 
