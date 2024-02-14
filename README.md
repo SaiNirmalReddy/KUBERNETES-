@@ -111,7 +111,7 @@ Now, Kubernetes is basically originated by Google and Google is using one specif
 -> Kubernetes cannot handle Advanced Load balancing capabilities so to solves this we ask apllications like FI, NGINX to create a  kubernetes controller using which people can use "load balancer" even in kubernetes and this concept called as "Ingress Controllers"  .
 
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------
 
 
  KUBERNETES ARCHITECTURE
