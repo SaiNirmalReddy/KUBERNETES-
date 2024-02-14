@@ -216,9 +216,9 @@ Kubernetes Production Systems
 
  -> Now, How Devops Engineers manages 100's of clusters on Production ? 
 
-   -> We have Kops,Kubeadm,Kubequash 
+    -> We have Kops,Kubeadm,Kubequash 
 
- We use a tool called "KOPS" to create,manage and delete the clusters in "KUBERNETES" .But Initially before 4 or 5 years we used to use "Kubeadm" in production but the difference with Kubeadm is you have to lot of manual activities like whenever you want to Upgrad, Configure - Kubeadm doesn't have that smooth approach of handling things whereas "KOPS" is basically Kubernetes Operations .
+          == We use a tool called "KOPS" to create,manage and delete the clusters in "KUBERNETES" .But Initially before 4 or 5 years we used to use "Kubeadm" in production but the difference with Kubeadm is you have to lot of manual activities like whenever you want to Upgrad, Configure - Kubeadm doesn't have that smooth approach of handling things whereas "KOPS" is basically Kubernetes Operations .
 
 -> We have the Lifecycle of Kubernetes like Installing,Upgrading,Managing and Deleting Clusters and this lifecyle is managed by KOPS . 
 
@@ -286,6 +286,9 @@ Run `aws configure`
 
 Please follow the steps carefully and read each command before executing.
 
+
+->  Next, KOPS require as a pre-requisite isto we need to create S3 bucket because the reason is KOPS usually manages hundreds of kubernetes clusters and to manage these Kubernets clusters, it is very easy to store all of the configuration of your kubernetes clusters in S3 buckets . 
+
 ### Create S3 bucket for storing the KOPS objects.
 
 ```
@@ -297,6 +300,10 @@ aws s3api create-bucket --bucket kops-abhi-storage --region us-east-1
 ```
 kops create cluster --name=demok8scluster.k8s.local --state=s3://kops-abhi-storage --zones=us-east-1a --node-count=1 --node-size=t2.micro --master-size=t2.micro  --master-volume-size=8 --node-volume-size=8
 ```
+
+-> One thing to remember here is we are using domain "k8s.local" but in real time we use "amazon.com", google.com and one additional step you shouls is you configure domain to "route53" . 
+
+-> Use the command - aws route53 create-hosted-zone --name dev.example.com --caller-reference 1 
 
 ### Important: Edit the configuration as there are multiple resources created which won't fall into the free tier.
 
@@ -316,7 +323,26 @@ After a few mins, run the below command to verify the cluster installation.
 
 ```
 kops validate cluster demok8scluster.k8s.local
-```
+````
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
