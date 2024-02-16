@@ -327,6 +327,93 @@ kops validate cluster demok8scluster.k8s.local
 
 
 
+Kubernetes Deployment
+
+-> Kubernetes Deployment is nothing but the Pods .
+
+-> Let's understand the difference between 
+
+
+---------------------------------------------------------------
+ 
+Container - So, we will create Container using Docker and to run this container , we provide specificaions to run the command-line by writing the commands like
+
+docker -it 
+docker -d
+docker --network
+docker -p -v   
+
+
+---------------------------------------------------------------
+  Pod - So, Now what Kubernetes say is let me bring the Enterprise model that is "instead of writing these things in a command line - you can create a YAML manifest and inside this YAML manifest , will write about container images, container nodes , ports, volumes and network . 
+
+-> The only difference is a single or mutliple containers and why we create multiple containers is one is dependent to another C1<->C2 .
+
+-> The advantage of using POD is both of the containers can use the same network , same storage and same local host .
+
+
+
+ --------------------------------------------------------------
+
+
+
+ 
+ Kubernetes Deployment - 
+  
+
+  Kubernetes have two behaviours in Deployment 
+
+
+    1)Auto Healing 2)Auto Scaling 
+
+
+    So these kind of things done in Deployment stage 
+
+  -> So, If you created a deployment resource, it will again create a intermediate resource called Replica Set and then Replica Set will create something called as Pod .
+---------------------------------------------------------------
+
+
+So, What Kubernetes says is create a Pod using the Deployment resources and this Deployment resource will create Replica Set which is a Kubernetes controller and finally this will roll out the Pods . 
+
+-> So , inside the "DEPLOYMENT YAML MANIFEST" , you increase the count of Replicas but in the Kubernetes there has to be something called "Kubernetes Controller" ensures that there are 2 Pods and even if users delete one of these Pods, then Kubernetes says like beacuse you have submitted YAML MANIFEST to me, I implement Auto Healing using the Replica Set Controller so that every detail and data will be with the Replicas Sets which is handled by Kubernetes Controller and this Controller ensures that the desired state is always present in the actual cluster . So there are "Default Controllers" and as well as you can create "Custom Controllers" 
+
+-> So the End Process is You will Create a |Deployment|-> and this Deployment will roll out a |Replica Sets| -> and this will create the Number of Pods you mention in the "Deployment YAML" Manifest . 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  
