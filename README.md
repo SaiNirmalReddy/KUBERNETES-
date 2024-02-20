@@ -9,7 +9,7 @@ KUBERNETES
 
  -> Everybody knows that people started moving to "microservices"
 
--> The Only pre-requesites to learn KUBERNETS is DOCKER . 
+-> The Only pre-requesites to learn KUBERNETES is DOCKER . 
 
 -> So, basically DOCKER is a CONTAINER PLATFORM because docker is making you to interact with the containers becuase it provides you complete container journey and complete container life cycle whether by using the Docker Engine or Docker CLI . 
 
