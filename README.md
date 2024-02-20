@@ -379,6 +379,40 @@ So, What Kubernetes says is create a Pod using the Deployment resources and this
 
 -> So the End Process is You will Create a |Deployment|-> and this Deployment will roll out a |Replica Sets| -> and this will create the Number of Pods you mention in the "Deployment YAML" Manifest . 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+   KUBERNETES DEPLOYMENT 
+
+
+-> In Kuberenetes what we do is first we create a Deployement and that will create a replicaset and those Replica sets are controlled by control-managers in controllers and this replica set is basically responsible for Auto-healing feature in Kubernetes and
+
+-> This Deployment - will create a Pod
+
+-> So the Pod is basically a wrapper to the Container which handles the single or multiple containers and where as in Pod Kubelet is resposible for whether the container is running or not and Ku-proxy is responsible for IP - addresses and Networking in Kubernetes . 
+
+
+-> Control Managers in the Master Node are responsible for contolling the actions of replica sets and this signal of actions is received to the API-SERVER and API-SERVER sends the signal to Control Managers to handle the actions . 
+
+
+
+-> kubectl deployment.yml
+------
+-------
+---------
+----------
+
+kubectl apply -f deployment.yml
+
+->kubectl pod.yml
+
+------
+-------
+---------
+----------
+
+kubectl apply -f pod.yml 
+
+--> For example , if some user deletes the pod , then Kubernetes will take care of the actions like if the pod is deleted unfortunately by someone, then because of the deployment and there we have replica sets which are controlled by control managers will start creating again the same pod again and make sures it is in the running state . 
 
 
 
