@@ -191,7 +191,7 @@ Kubernetes Production Systems
 
 -> Let's get to know how Devops Enginner manages the lifecycle like creation,upgradation,configuration,deletion of kubernetes clusters.
 
--> Most of the people practicing kubernetes on platforms like MINICUBE,K3S,KIND,K3D,MICROK8S , these platforms are just for practice not for the real-time .
+-> Most of the people practicing kubernetes on platforms like MINIKUBE,K3S,KIND,K3D,MICROK8S , these platforms are just for practice not for the real-time .
 
 
 -> Let's know which tools are using in organization 
