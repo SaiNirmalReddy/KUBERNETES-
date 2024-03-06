@@ -474,6 +474,52 @@ Cluster IP - Devops Engineers
 
 
 
+For example if we delete one pod , and due to concept of Auto-Healing in kubernetes , pod will again run with some different IP Address, then the user who ar trying to access the application faces the traffic loss, so kubernetes came up with the concept called kuberenets services which maintains the "labels and selectors" by which the user cannot confuse because of this concept
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-> KUBERNETES INGRESS AND INGRESS CONTROLLERS
+
+Kubernetes Ingress and Ingress Controllers provide several advantages in real-time scenarios, making them crucial components for managing external access to applications deployed in Kubernetes clusters. Here are some key advantages:
+
+Single Entry Point:
+
+Advantage: Ingress acts as a single entry point for external traffic to access services within the Kubernetes cluster. This simplifies routing and load balancing, providing a centralized and consistent way to manage external access.
+Path-Based Routing:
+
+Advantage: Ingress allows path-based routing, enabling you to route traffic to different services based on URL paths. This is valuable for hosting multiple applications or microservices on a single domain.
+SSL/TLS Termination:
+
+Advantage: Ingress Controllers can handle SSL/TLS termination, offloading the responsibility of managing certificates from individual services. This simplifies certificate management and ensures secure communication between clients and services.
+Load Balancing:
+
+Advantage: Ingress Controllers often come with built-in load balancing capabilities. They distribute incoming traffic across multiple pods or nodes to optimize resource utilization and enhance application availability and reliability.
+HTTP and HTTPS Support:
+
+Advantage: Ingress supports both HTTP and HTTPS protocols, allowing you to secure communication with your applications. This is crucial for protecting sensitive data and complying with security best practices.
+Web Application Firewall (WAF) Integration:
+
+Advantage: Some Ingress Controllers support integration with Web Application Firewalls (WAFs). This enhances security by providing additional protection against common web application vulnerabilities and attacks.
+Rewrite and Redirect Rules:
+
+Advantage: Ingress enables you to define rewrite and redirect rules, allowing you to modify URL paths or redirect traffic to a different location. This is useful for creating user-friendly URLs and managing changes in application endpoints.
+Dynamic Configuration Updates:
+
+Advantage: Ingress Controllers often support dynamic configuration updates. This means you can modify routing rules, add or remove services, and make other adjustments without disrupting the overall application availability.
+Customizable Error Pages:
+
+Advantage: Ingress Controllers allow you to customize error pages for various HTTP status codes. This ensures a better user experience in case of errors and helps in providing meaningful information to users.
+Integration with Kubernetes Ecosystem:
+
+Advantage: Ingress is a native Kubernetes resource, tightly integrated with the Kubernetes ecosystem. This integration simplifies the management of external access within the Kubernetes environment, aligning with the declarative nature of Kubernetes configuration.
+Scalability:
+
+Advantage: Ingress Controllers can scale horizontally to handle increased traffic and provide high availability. This scalability ensures that the Ingress infrastructure can grow alongside the applications it serves.
+In real-time scenarios, these advantages collectively contribute to efficient traffic management, improved security, and enhanced flexibility in deploying and managing applications within Kubernetes clusters.
+
+
+
 
 
 
